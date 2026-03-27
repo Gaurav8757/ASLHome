@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASL Wallets Pay - Digital Service Provider</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- ==================== NAVBAR SECTION ==================== -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark navbar-transparent">
+        <div class="container-lg p-2 position-relative">
+            <a class="navbar-brand fw-bold text-primary" href="#home">
+                <span class="brand-logo">ASL Wallets Pay</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto text-center mt-3 mt-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <div class="d-flex justify-content-center mt-3 mt-lg-0">
+                    <a href="#" class="btn btn-primary px-4">Login<i
+                            class="fa-solid fa-up-right-from-square ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="hero-section">
+        <!-- Decorative background orbs -->
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
+
+        <div class="container-lg hero-container">
+            <div class="row align-items-center g-5">
+                <!-- Left: Text -->
+                <div class="col-lg-6">
+                    <div class="hero-badge mb-4">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>9+ Years of Trusted Digital Services</span>
+                    </div>
+                    <h1 class="hero-title mb-4">
+                        All-in-One <span class="hero-highlight">Smart Digital Payment & Wallet</span> Platform for B2B
+                        Partners
+                    </h1>
+                    <p class="hero-subtitle mb-5">
+                        Empowering retailers, distributors &amp; partners with AEPS, DMT, BBPS, Micro ATM, Mobile
+                        Recharge, DTH Recharge, Electricity Bill Payment, Gas Bill Payment, PAN Card, Flight Booking, Insurance Services and
+                        15+ banking services — instantly &amp; securely.
+                    </p>
+                    <div class="hero-cta-group mb-5">
+                        <a href="#pricing" class="btn btn-primary btn-hero-primary">
+                            <i class="fa-solid fa-rocket me-2"></i>Get Started
+                        </a>
+                        <a href="#services" class="btn btn-hero-outline">
+                            <i class="fa-solid fa-circle-play me-2"></i>Explore Services
+                        </a>
+                    </div>
+                    <!-- Trust stats -->
+                    <div class="hero-trust-row">
+                        <div class="hero-trust-item">
+                            <span class="hero-trust-num">50+</span>
+                            <span class="hero-trust-label">API Partners</span>
+                        </div>
+                        <div class="hero-trust-divider"></div>
+                        <div class="hero-trust-item">
+                            <span class="hero-trust-num">6,325+</span>
+                            <span class="hero-trust-label">Retailers</span>
+                        </div>
+                        <div class="hero-trust-divider"></div>
+                        <div class="hero-trust-item">
+                            <span class="hero-trust-num">830+</span>
+                            <span class="hero-trust-label">Distributors</span>
+                        </div>
+                        <div class="hero-trust-divider"></div>
+                        <div class="hero-trust-item">
+                            <span class="hero-trust-num">20+</span>
+                            <span class="hero-trust-label">Admins</span>
+                        </div>
+                        <div class="hero-trust-divider"></div>
+                        <div class="hero-trust-item">
+                            <span class="hero-trust-num">90+</span>
+                            <span class="hero-trust-label">White Label</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Visual -->
+                <div class="col-lg-6 d-flex justify-content-center position-relative">
+                    <div class="hero-img-wrapper">
+                        <img src="./assets/p1.png" alt="Digital Banking Services" class="hero-main-img">
+                        <!-- Floating service badges -->
+                        <div class="hero-float-badge badge-aeps">
+                            <i class="fa-solid fa-fingerprint"></i> AEPS
+                        </div>
+                        <div class="hero-float-badge badge-dmt">
+                            <i class="fa-solid fa-paper-plane"></i> DMT
+                        </div>
+                        <div class="hero-float-badge badge-bbps">
+                            <i class="fa-solid fa-file-invoice"></i> BBPS
+                        </div>
+                        <div class="hero-float-badge badge-micro-atm">
+                            <i class="fa-solid fa-tablet"></i> Micro ATM
+                        </div>
+                        <div class="hero-float-badge badge-recharge">
+                            <i class="fa-solid fa-mobile"></i> Mobile Recharge  
+                        </div>
+                        <div class="hero-float-badge badge-dth-recharge">
+                            <i class="fa-solid fa-tv"></i> DTH Recharge
+                        </div>
+                        <div class="hero-float-badge badge-electricity">
+                            <i class="fa-solid fa-bolt"></i> Electricity Bill
+                        </div>
+                        <div class="hero-float-badge badge-gas">
+                            <i class="fa-solid fa-fire"></i> Gas Bill
+                        </div>
+                        <div class="hero-float-badge badge-pan">
+                            <i class="fa-solid fa-pen"></i> PAN Card
+                        </div>
+                        <div class="hero-float-badge badge-flight">
+                            <i class="fa-solid fa-plane"></i> Flight Booking
+                        </div>
+                        <div class="hero-float-badge badge-insurance">
+                            <i class="fa-solid fa-shield"></i> Insurance Services
+                        </div>
+
+                        <!-- Glow ring -->
+                        <div class="hero-glow-ring"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="about-section py-5 py-md-7 bg-light">
+        <div class="container-lg">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="./assets/billpay22.gif"
+                        alt="About ASL Wallets" class="img-fluid rounded-3 about-img">
+                </div>
+                <div class="col-lg-6 ps-lg-4">
+                    <h2 class="section-title mb-4">About ASL Wallets</h2>
+                    <h5>India’s Trusted Digital Payment & Service Aggregator Platform</h5>
+                    <p class="section-text mb-3">
+                        Welcome to ASL WALLETS, your all-in-one platform for digital
+                        payments, financial inclusion services, and utility bill solutions in India.
+                        We are a next-gen fintech and service aggregator, empowering millions
+                        of customers and retail partners through a single, secure digital
+                        ecosystem.
+                        With a portfolio of 60+ high-demand services, including mobile
+                        recharge, AEPS, Micro ATM, domestic money transfer (DMT), and BBPS,
+                        ASL WALLETS is committed to making digital transactions fast, reliable,
+                        and accessible—from urban centers to the most remote villages.
+                    </p>
+                    <ul class="about-features list-unstyled">
+                        <li class="mb-2"><i class="feature-icon text-success fa-solid fa-check-circle"></i> Registered
+                            Company Since 2016</li>
+                        <li class="mb-2"><i class="feature-icon text-success fa-solid fa-check-circle"></i> 9+ Years
+                            of Experience</li>
+                        <li class="mb-2"><i class="feature-icon text-success fa-solid fa-check-circle"></i>
+                            Professional IT Engineers</li>
+                        <li class="mb-2"><i class="feature-icon text-success fa-solid fa-check-circle"></i> Reliable
+                            Banking Solutions</li>
+                    </ul>
+                    <!-- <a href="#" class="btn btn-primary mt-4">Read More</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== Carousel ======================== -->
+    <section id="carousel" class="py-5 container-slider mx-auto">
+        <div class="container-lg">
+         
+        <div class="slide">
+            <div class="item" style="
+            background-image: url('https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+          ">
+                <div class="content">
+                    <div class="name">Scotland</div>
+                    <div class="des">
+                        Experience the mystical Highlands under twilight skies and misty lochs.
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" style="
+            background-image: url('https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+          ">
+                <div class="content">
+                    <div class="name">Norway</div>
+                    <div class="des">
+                        Chase the Northern Lights under star-lit skies along scenic fjord roads.
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" style="
+            background-image: url('https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+          ">
+                <div class="content">
+                    <div class="name">New Zealand</div>
+                    <div class="des">
+                        Wander dramatic, mist-laden mountain paths that feel straight out of a dream.
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" style="
+            background-image: url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+          ">
+                <div class="content">
+                    <div class="name">Japan</div>
+                    <div class="des">
+                        Discover serene mountain temples shrouded in dusk and ancient forest trails.
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <section id="services" class="services-section py-5">
+        <div class="container-lg">
+            <div class="text-center mb-5">
+                <h2 class="section-title mb-3">You Can Follow Easy Way</h2>
+                <p class="section-subtitle">Choose from our comprehensive digital services</p>
+            </div>
+            <div class="row g-4">
+                <!-- Service Card 1: AEPS -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-fingerprint"></i>
+                        </div>
+                        <div class="service-images">
+                            <img src="assets/aeps.png" alt="AEPS" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                            <i class="fa-solid fa-fingerprint" style="display:none"></i>
+                        </div>
+                        <div class="service-overlay">
+                            <h5 class="service-title">AEPS</h5>
+                            <p class="service-text">Fast, secure Aadhaar-based banking at your doorstep.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 2: DMT -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                        <div class="service-images">
+                            <img src="assets/dmt.png" alt="DMT" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                            <i class="fa-solid fa-wallet" style="display:none"></i>
+                        </div>
+                        <div class="service-overlay">
+                            <h5 class="service-title">DMT</h5>
+                            <p class="service-text">Safe and secure domestic money transfer across India.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 3: BBPS -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-file-invoice"></i>
+                        </div>
+                        <div class="service-images">
+                            <img src="assets/bbps.png" alt="BBPS" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                            <i class="fa-solid fa-credit-card" style="display:none"></i>
+                        </div>
+                        <div class="service-overlay">
+                            <h5 class="service-title">BBPS</h5>
+                            <p class="service-text">Pay electricity, water, gas, and 100+ bills instantly.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 4: Micro ATM -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-tablet"></i>
+                        </div>
+                        <div class="service-images">
+                            <img src="assets/microatm.png" alt="Micro ATM" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                            <i class="fa-solid fa-cash-register" style="display:none"></i>
+                        </div>
+                        <div class="service-overlay">
+                            <h5 class="service-title">Micro ATM</h5>
+                            <p class="service-text">Enable cash withdrawals with debit card point-of-sale.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 5: Mobile Recharge -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                        <div class="service-images">
+                            <img src="assets/recharge.png" alt="Mobile Recharge" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                            <i class="fa-solid fa-mobile-screen-button" style="display:none"></i>
+                        </div>
+                        <div class="service-overlay">
+                            <h5 class="service-title">Mobile Recharge</h5>
+                            <p class="service-text">Quick prepaid and postpaid recharges for all operators.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 6: DTH Recharge -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-satellite-dish"></i>
+                        </div>
+                        <div class="service-images">
+                            <img src="assets/dth.png" alt="DTH Recharge" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                            <i class="fa-solid fa-satellite-dish" style="display:none"></i>
+                        </div>
+                        <div class="service-overlay">
+                            <h5 class="service-title">DTH Recharge</h5>
+                            <p class="service-text">Instant DTH recharge for Airtel, Tata Play, Dish TV & more.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 7: Electricity Bill -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <div class="service-images">
+                            <img src="assets/electricity.png" alt="Electricity Bill" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                            <i class="fa-solid fa-bolt-lightning" style="display:none"></i>
+                        </div>
+                        <div class="service-overlay">
+                            <h5 class="service-title">Electricity Bill</h5>
+                            <p class="service-text">Pay your electricity bills from any state board instantly.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 8: Gas Bill -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-fire-burner"></i>
+                        </div>
+                        <div class="service-images">
+                            <img src="assets/gas.png" alt="Gas Bill" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                            <i class="fa-solid fa-fire" style="display:none"></i>
+                        </div>
+                        <div class="service-overlay">
+                            <h5 class="service-title">Gas Bill</h5>
+                            <p class="service-text">Secure online payment for piped gas and LPG bookings.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 9: PAN Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-id-card"></i>
+                        </div>
+                        <div class="service-images">
+                            <img src="assets/pan.png" alt="PAN Card" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                            <i class="fa-solid fa-id-badge" style="display:none"></i>
+                        </div>
+                        <div class="service-overlay">
+                            <h5 class="service-title">PAN Card</h5>
+                            <p class="service-text">Professional service for New PAN and Correction applications.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 10: Flight Booking -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-plane-departure"></i>
+                        </div>
+                        <div class="service-images">
+                            <img src="assets/flight.png" alt="Flight Booking" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                            <i class="fa-solid fa-plane" style="display:none"></i>
+                        </div>
+                        <div class="service-overlay">
+                            <h5 class="service-title">Flight Booking</h5>
+                            <p class="service-text">Best deals on domestic and international flight tickets.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 11: Insurance Services -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-shield-heart"></i>
+                        </div>
+                        <div class="service-images">
+                            <img src="assets/insurance.png" alt="Insurance" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                            <i class="fa-solid fa-user-shield" style="display:none"></i>
+                        </div>
+                        <div class="service-overlay">
+                            <h5 class="service-title">Insurance Services</h5>
+                            <p class="service-text">Life, Health, and Motor insurance with leading providers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ==================== SLIDER COMPANY PARTNER SECTION  ==================== -->
+    <section class="slider bg-light">
+        <div class="slide-track">
+            <!-- 11 Partner Logos -->
+            <div class="slide"><img src="assets/aeps.svg" alt="AEPS" /></div>
+            <div class="slide"><img src="assets/bharat_connect.svg" alt="Bharat Connect" /></div>
+            <div class="slide"><img src="assets/phonepe.svg" alt="PhonePe" /></div>
+            <div class="slide"><img src="assets/npci.svg" alt="NPCI" /></div>
+            <div class="slide"><img src="assets/nsdl.svg" alt="NSDL" /></div>
+            <div class="slide"><img src="assets/uti.svg" alt="UTI" /></div>
+            <div class="slide"><img src="assets/airtel-payment.svg" alt="Airtel" /></div>
+            <div class="slide"><img src="assets/hdfc.svg" alt="HDFC" /></div>
+            <div class="slide"><img src="assets/yesbank.svg" alt="Yes Bank" /></div>
+            <div class="slide"><img src="assets/idfc.svg" alt="IDFC" /></div>
+            <div class="slide"><img src="assets/dbs.svg" alt="DBS" /></div>
+            
+            <!-- Duplicates for seamless scroll -->
+            <div class="slide"><img src="assets/aeps.svg" alt="AEPS" /></div>
+            <div class="slide"><img src="assets/bharat_connect.svg" alt="Bharat Connect" /></div>
+            <div class="slide"><img src="assets/phonepe.svg" alt="PhonePe" /></div>
+            <div class="slide"><img src="assets/npci.svg" alt="NPCI" /></div>
+            <div class="slide"><img src="assets/nsdl.svg" alt="NSDL" /></div>
+            <div class="slide"><img src="assets/uti.svg" alt="UTI" /></div>
+            <div class="slide"><img src="assets/airtel-payment.svg" alt="Airtel" /></div>
+            <div class="slide"><img src="assets/hdfc.svg" alt="HDFC" /></div>
+            <div class="slide"><img src="assets/yesbank.svg" alt="Yes Bank" /></div>
+            <div class="slide"><img src="assets/idfc.svg" alt="IDFC" /></div>
+            <div class="slide"><img src="assets/dbs.svg" alt="DBS" /></div>
+        </div>
+    </section>
+
+    <!-- ==================== B2B FEATURES & OFFERINGS ==================== -->
+    <section id="b2b-offerings" class="b2b-section py-5 py-md-7 bg-light">
+        <div class="container-lg">
+            <div class="text-center mb-5">
+                <h2 class="section-title mb-3">B2B Features & Offerings</h2>
+                <p class="section-subtitle">Scale your business with our robust fintech infrastructure</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Card 1: Hierarchy -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="b2b-card h-100 p-4">
+                        <div class="b2b-icon-box mb-3">
+                            <i class="fa-solid fa-users-gear"></i>
+                        </div>
+                        <h5 class="b2b-card-title">B2B Hierarchy Setup</h5>
+                        <ul class="b2b-list list-unstyled mt-3">
+                            <li><i class="fa-solid fa-check-circle text-success me-2"></i> Master Admin</li>
+                            <li><i class="fa-solid fa-check-circle text-success me-2"></i> White Label Partner</li>
+                            <li><i class="fa-solid fa-check-circle text-success me-2"></i> Master Distributor</li>
+                            <li><i class="fa-solid fa-check-circle text-success me-2"></i> Distributor + Retailer</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 2: APIs -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="b2b-card h-100 p-4">
+                        <div class="b2b-icon-box mb-3">
+                            <i class="fa-solid fa-code-branch"></i>
+                        </div>
+                        <h5 class="b2b-card-title">Integrated APIs</h5>
+                        <p class="text-muted small mt-3">AEPS, DMT, Micro ATM, Bill Payments, Mobile & DTH Recharge – all in one unified platform with seamless integration.</p>
+                        <div class="badge bg-primary-soft text-primary mt-2">All-in-One Engine</div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Platform -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="b2b-card h-100 p-4">
+                        <div class="b2b-icon-box mb-3">
+                            <i class="fa-solid fa-display"></i>
+                        </div>
+                        <h5 class="b2b-card-title">Complete Platform</h5>
+                        <ul class="b2b-list list-unstyled mt-3">
+                            <li><i class="fa-solid fa-check-circle text-success me-2"></i> Native Android Application</li>
+                            <li><i class="fa-solid fa-check-circle text-success me-2"></i> Fully Responsive Website</li>
+                            <li><i class="fa-solid fa-check-circle text-success me-2"></i> Included with setup</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 4: Infrastructure -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="b2b-card h-100 p-4">
+                        <div class="b2b-icon-box mb-3">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                        <h5 class="b2b-card-title">Infrastructure</h5>
+                        <p class="text-muted small mt-3">Experience lightning-fast processing. Our entire ecosystem is hosted on High-Speed Dedicated Cloud Servers for 24/7 uptime.</p>
+                        <div class="badge bg-success-soft text-success mt-2">High Uptime Guaranteed</div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Marketing Support -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="b2b-card h-100 p-4">
+                        <div class="b2b-icon-box mb-3">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <h5 class="b2b-card-title">Marketing Support</h5>
+                        <ul class="b2b-list list-unstyled mt-3">
+                            <li><i class="fa-solid fa-check-circle text-success me-2"></i> Digital Marketing Guidance</li>
+                            <li><i class="fa-solid fa-check-circle text-success me-2"></i> Strategy & Planning Support</li>
+                            <li><i class="fa-solid fa-check-circle text-success me-2"></i> Media Promotion Planning</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 6: Security -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="b2b-card h-100 p-4">
+                        <div class="b2b-icon-box mb-3">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h5 class="b2b-card-title">Security & Performance</h5>
+                        <ul class="b2b-list list-unstyled mt-3">
+                            <li><i class="fa-solid fa-check-circle text-success me-2"></i> 100% Safe & Secure</li>
+                            <li><i class="fa-solid fa-check-circle text-success me-2"></i> 99% Service Success Rate</li>
+                            <li><i class="fa-solid fa-check-circle text-success me-2"></i> Instant Error Settlement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== STATISTICS SECTION ==================== -->
+    <section class="stats-section py-5 py-md-7 bg-primary text-white">
+        <div class="container-lg">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-6 mb-4 mb-lg-0">
+                    <h2 class="section-title text-white mb-4">Our Networks</h2>
+                    <img src="./assets/works.png" alt="User Network"
+                        class="img-fluid rounded-3">
+                </div>
+                <div class="col-md-6 ps-md-4">
+                    <div class="row g-3">
+                        <!-- Stat Card 1 -->
+                        <div class="col-sm-6">
+                            <div class="stat-card">
+                                <h3 class="stat-number">90%</h3>
+                                <p class="stat-label">Retailer Commission</p>
+                            </div>
+                        </div>
+                        <!-- Stat Card 2 -->
+                        <div class="col-sm-6">
+                            <div class="stat-card">
+                                <h3 class="stat-number">75%</h3>
+                                <p class="stat-label">Distributor Commission</p>
+                            </div>
+                        </div>
+                        <!-- Stat Card 3 -->
+                        <div class="col-sm-6">
+                            <div class="stat-card">
+                                <h3 class="stat-number">80%</h3>
+                                <p class="stat-label">Master Distributor</p>
+                            </div>
+                        </div>
+                        <!-- Stat Card 4 -->
+                        <div class="col-sm-6">
+                            <div class="stat-card">
+                                <h3 class="stat-number">60%</h3>
+                                <p class="stat-label">White Label</p>
+                            </div>
+                        </div>
+                        <!-- Stat Card 5 -->
+                        <div class="col-sm-6">
+                            <div class="stat-card">
+                                <h3 class="stat-number">45%</h3>
+                                <p class="stat-label">Admin Commission</p>
+                            </div>
+                        </div>
+                        <!-- Stat Card 6 -->
+                        <div class="col-sm-6">
+                            <div class="stat-card">
+                                <h3 class="stat-number">25%</h3>
+                                <p class="stat-label">API Partner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Count Summary -->
+            <div class="row  pt-5 border-top border-white border-opacity-25">
+                <div class="col-sm-6 col-lg-2 mb-3 mb-lg-0 text-center">
+                    <h4 class="counter">6325</h4>
+                    <p class="counter-label">Total Retailers</p>
+                </div>
+                <div class="col-sm-6 col-lg-2 mb-3 mb-lg-0 text-center">
+                    <h4 class="counter">830</h4>
+                    <p class="counter-label">Total Distributors</p>
+                </div>
+                <div class="col-sm-6 col-lg-2 mb-3 mb-lg-0 text-center">
+                    <h4 class="counter">161</h4>
+                    <p class="counter-label">M-Distributors</p>
+                </div>
+                <div class="col-sm-6 col-lg-2 mb-3 mb-lg-0 text-center">
+                    <h4 class="counter">70</h4>
+                    <p class="counter-label">White Labels</p>
+                </div>
+                <div class="col-sm-6 col-lg-2 mb-3 mb-lg-0 text-center">
+                    <h4 class="counter">32</h4>
+                    <p class="counter-label">Admins</p>
+                </div>
+                <div class="col-sm-6 col-lg-2 text-center">
+                    <h4 class="counter">18</h4>
+                    <p class="counter-label">Sub Admins</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PRICING SECTION ==================== -->
+    <section id="pricing" class="pricing-section py-3 py-md-5 bg-light">
+        <div class="container-lg">
+            <div class="text-center mb-5">
+                <h2 class="section-title mb-3">Price List in ASL Wallets Pay</h2>
+                <p class="section-subtitle">Choose the right plan for your business</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Pricing Card 1: Retailer -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="pricing-card">
+                        <div class="pricing-badge">Most Popular</div>
+                        <h4 class="pricing-title">Retailer</h4>
+                        <p class="pricing-subtitle mb-3">Join as Retailer and offer utility services from your shop</p>
+                        <div class="pricing-amount">
+                            <span class="currency">₹</span>
+                            <span class="amount">3500</span>
+                        </div>
+                        <ul class="pricing-features list-unstyled">
+                            <li><i class="feature-check fa-solid fa-check"></i> Free Registration</li>
+                            <li><i class="feature-check fa-solid fa-check"></i> 25+ Services</li>
+                            <li><i class="feature-check fa-solid fa-check"></i> Account Opening</li>
+                            <li><i class="feature-check fa-solid fa-check"></i> Free Service</li>
+                            <li><i class="feature-check fa-solid fa-check"></i> 0 Wallet Charges</li>
+                            <li><i class="feature-check fa-solid fa-check"></i> Live in 5 Mins</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary w-100 mt-4">Join Now</a>
+                    </div>
+                </div>
+
+                <!-- Pricing Card 2: Distributor -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="pricing-card">
+                        <h4 class="pricing-title">Distributor</h4>
+                        <p class="pricing-subtitle mb-3">Appoint agents and earn on every transactions</p>
+                        <div class="pricing-amount">
+                            <span class="currency">₹</span>
+                            <span class="amount">15000</span>
+                        </div>
+                        <ul class="pricing-features list-unstyled">
+                            <li><i class="feature-check fa-solid fa-check"></i> Unlimited Agents</li>
+                            <li><i class="feature-check fa-solid fa-check"></i> Realtime Commission</li>
+                            <li><i class="feature-check fa-solid fa-check"></i> Set Different Deals</li>
+                            <li><i class="feature-check fa-solid fa-check"></i> Backoffice Access</li>
+                            <li><i class="feature-check fa-solid fa-check"></i> Custom Dashboard</li>
+                            <li><i class="feature-check fa-solid fa-check"></i> Android Application</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary w-100 mt-4">Join Now</a>
+                    </div>
+                </div>
+
+                <!-- Pricing Card 3: Master Distributor -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="pricing-card">
+                        <h4 class="pricing-title">Master Distributor</h4>
+                        <p class="pricing-subtitle mb-3">Control multiple distributors and earn more</p>
+                        <div class="pricing-amount">
+                            <span class="currency">₹</span>
+                            <span class="amount">25000</span>
+                        </div>
+                        <ul class="pricing-features list-unstyled">
+                            <li><i class="feature-check fa-solid fa-check"></i> Unlimited Distributors</li>
+                            <li><i class="feature-check fa-solid fa-check"></i> Realtime Commission</li>
+                            <li><i class="feature-check fa-solid fa-check"></i> Set Different Deals</li>
+                            <li><i class="feature-check fa-solid fa-check"></i> Backoffice Access</li>
+                            <li><i class="feature-check fa-solid fa-check"></i> Custom Dashboard</li>
+                            <li><i class="feature-check fa-solid fa-check"></i> Android Application</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary w-100 mt-4">Join Now</a>
+                    </div>
+                </div>
+
+                <!-- Pricing Card 4: White Label -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="pricing-card">
+                        <h4 class="pricing-title">White Label</h4>
+                        <p class="pricing-subtitle mb-3">Create own brand and provide service</p>
+                        <div class="pricing-amount">
+                            <span class="currency">₹</span>
+                            <span class="amount">150000</span>
+                        </div>
+                        <ul class="pricing-features list-unstyled">
+                            <li><i class="feature-check fa-solid fa-check"></i> Unlimited Distributors</li>
+                            <li><i class="feature-check fa-solid fa-check"></i> Unlimited Agents</li>
+                            <li><i class="feature-check fa-solid fa-check"></i> Your Own Domain</li>
+                            <li><i class="feature-check fa-solid fa-check"></i> Your Own Application</li>
+                            <li><i class="feature-check fa-solid fa-check"></i> BackOffice Access</li>
+                            <li><i class="feature-check fa-solid fa-check"></i> Marketing Material</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary w-100 mt-4">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS =================== -->
+    <section class="testimonials-section py-5  ">
+        <div class="container-lg">
+            <div class="text-center mb-5">
+                <h2 class="section-title mb-3">What Our Partners Say</h2>
+                <p class="section-subtitle">Our Partners, Retailers &amp; Customers</p>
+            </div>
+        </div>
+        <main class="carousel-wrapper container-lg ">
+            <ul class="carousel">
+
+                <!-- Testimonial 1: Anuj Singh -->
+                <li class="card">
+                    <div class="img-wrapper">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Anuj Singh">
+                    </div>
+                    <div class="card-content">
+                        <h3>Anuj Singh</h3>
+                        <div class="rating mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Best in class service provider. ASL Wallets Pay transformed my shop's digital payments
+                            completely.</p>
+                    </div>
+                </li>
+
+                <!-- Testimonial 2: Simran Kaur -->
+                <li class="card">
+                    <div class="img-wrapper">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Simran Kaur">
+                    </div>
+                    <div class="card-content">
+                        <h3>Simran Kaur</h3>
+                        <div class="rating mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>AEPS, DMT, Micro ATM, Payout, Flight, PAN Card – all services under one roof. Very
+                            convenient!</p>
+                    </div>
+                </li>
+
+                <!-- Testimonial 3: Vikram Patel -->
+                <li class="card">
+                    <div class="img-wrapper">
+                        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Vikram Patel">
+                    </div>
+                    <div class="card-content">
+                        <h3>Vikram Patel</h3>
+                        <div class="rating mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Excellent white-label partner experience. The backoffice and custom dashboard are
+                            outstanding.</p>
+                    </div>
+                </li>
+
+                <!-- Testimonial 4: Anjali Desai -->
+                <li class="card">
+                    <div class="img-wrapper">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Anjali Desai">
+                    </div>
+                    <div class="card-content">
+                        <h3>Anjali Desai</h3>
+                        <div class="rating mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>Recharging and bill payments have never been this fast. Support team always responds quickly.
+                        </p>
+                    </div>
+                </li>
+
+                <!-- Testimonial 5: Amit Kumar -->
+                <li class="card">
+                    <div class="img-wrapper">
+                        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Amit Kumar">
+                    </div>
+                    <div class="card-content">
+                        <h3>Amit Kumar</h3>
+                        <div class="rating mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>The best digital service company. Their uninterrupted system makes banking work a total
+                            breeze.</p>
+                    </div>
+                </li>
+
+            </ul>
+        </main>
+    </section>
+
+
+    <!-- ==================== MISSION & VISION SECTION ==================== -->
+    <section id="mission-vision" class="mission-vision-section py-5 py-md-7">
+       
+        <div class="container-lg">
+             
+            <div class="row align-items-center">
+                <!-- Vision Column -->
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="vision-box p-4 p-md-5">
+                        <div class="section-badge mb-3">Goal & Strategy</div>
+                        <h2 class="section-title mb-4">Our Vision</h2>
+                        <p class="vision-text lead mb-4">
+                            At ASL WALLETS, our vision is to simplify digital transactions for every Indian through a secure, fast, and user-friendly platform. We aim to empower local retailers and consumers by providing seamless services like mobile recharge, utility bill payments, AEPS, broadband, insurance, and more.
+                        </p>
+                        <p class="vision-text">
+                            Our goal is to ensure easy access to digital services in every town and village across India—making financial inclusion a reality for all.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Mission Column -->
+                <div class="col-lg-6 ps-lg-5">
+                    <div class="row g-4 mb-4">
+                        <div class="col-sm-6">
+                            <div class="mission-card p-4">
+                                <div class="mission-icon mb-3">
+                                    <i class="fa-solid fa-bullseye"></i>
+                                </div>
+                                <h4 class="mission-title">Business Mission 01</h4>
+                                <p class="mission-desc small">Expanding digital reach to the last mile.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="mission-card p-4">
+                                <div class="mission-icon mb-3">
+                                    <i class="fa-solid fa-rocket"></i>
+                                </div>
+                                <h4 class="mission-title">Business Mission 02</h4>
+                                <p class="mission-desc small">Building a secure franchise ecosystem.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mission-detail-box p-4 rounded-4 border-start border-primary border-4 shadow-sm">
+                        <p class="mb-3">
+                            To bring digital convenience to every corner of India, ASL WALLETS is building a vast franchise and distributor network across villages, towns, and cities. Each franchise operates a user-friendly terminal connected to the service provider’s servers, executing real-time transactions that are secure and equally authorized.
+                        </p>
+                        <p class="mb-0">
+                            Through this growing network, we aim to provide a mini digital service center in every locality, ensuring financial services are available even in the most remote areas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== RANKINGS SECTION ==================== -->
+    <section class="rankings-section py-5 py-md-7 bg-light">
+        <div class="container-lg">
+            <div class="text-center mb-5">
+                <h2 class="section-title mb-3">Top Five Ranks</h2>
+                <p class="section-subtitle">Celebrating our best performers</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Top Retailers -->
+                <div class="col-lg-4">
+                    <div class="ranking-card">
+                        <div class="ranking-header">
+                            <i class="fa-solid fa-award"></i>
+                            <h4>Top Retailers</h4>
+                        </div>
+                        <ol class="ranking-list">
+                            <li>Rathva Kantaben Gane - Ghutiya Aamba</li>
+                            <li>Pawar Laxmanbhai B. - Dang</li>
+                            <li>Harun Asfak Gulammah - Santrampur</li>
+                            <li>Parmar Pramodbhai BA - Devghadbaria</li>
+                            <li>Baria Mahendrakumar - Nandarva</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Top Distributors -->
+                <div class="col-lg-4">
+                    <div class="ranking-card">
+                        <div class="ranking-header">
+                            <i class="fa-solid fa-trophy"></i>
+                            <h4>Top Distributors</h4>
+                        </div>
+                        <ol class="ranking-list">
+                            <li>Milan Goswami - Rajkot</li>
+                            <li>Aashikali Saiyad - Hadgood</li>
+                            <li>Mahmad Naeem Yakub B - Ankleshwar</li>
+                            <li>Pankajbhai - Godhara</li>
+                            <li>Subrat Kumar Parida - Nabarangpur</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Top Master Distributors -->
+                <div class="col-lg-4">
+                    <div class="ranking-card">
+                        <div class="ranking-header">
+                            <i class="fa-solid fa-star"></i>
+                            <h4>Top M-Distributors</h4>
+                        </div>
+                        <ol class="ranking-list">
+                            <li>ASL Wallets Pay - Deesa</li>
+                            <li>ASL Wallets Pay - Jambusar</li>
+                            <li>ASL Wallets Pay - Surat</li>
+                            <li>ASL Wallets Pay - Panch Mahals</li>
+                            <li>ASL Wallets Pay - Dudhiya</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!-- ==================== FAQ SECTION ==================== -->
+    <section id="faq" class="faq-section py-5 py-md-7">
+        <div class="container-lg">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <h2 class="section-title mb-4">Frequently Asked Questions</h2>
+                    <img src="assets/p2.svg" alt="FAQ"
+                        class="img-fluid rounded-3 faq-main-img">
+                </div>
+                <div class="col-lg-7 ps-lg-4">
+                    <div class="accordion" id="faqAccordion">
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1">
+                                    01. How can I start this?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    You can start your retail banking business here by registering your ID at ASL
+                                    Wallets Digital Portal.
+                                    Thereafter you can start your ID here with all the necessary services.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2">
+                                    02. How can I pay for this?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    After registering your ID at portal, for activation of all services you will need to
+                                    pay for services.
+                                    You have to call your sales person or given helpline number for payment details.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3">
+                                    03. How to create an account?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    You can easily create your account by visiting our portal and thereafter: Register →
+                                    Fill
+                                    Details → Submit Details → Receive Password via SMS.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq4">
+                                    04. How will I get training here?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Once your ID has been created and work has been started, you will be provided
+                                    complete training
+                                    about our services and how to work at portal. Our team will guide you through every
+                                    step.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq5">
+                                    05. How can I be a Distributor?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Same procedure for distributor, to become our distributor you have to pay the
+                                    required charges
+                                    and thereafter contact your sales person for further details.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 6 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq6">
+                                    06. How can I get commission on work?
+                                </button>
+                            </h2>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The commission will be distributed as per given slabs, and will automatically be
+                                    credited to
+                                    your ID wallet. You can withdraw it anytime from your dashboard.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="contact-section py-5 py-md-5 bg-light">
+        <div class="container-lg">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb- mb-lg-0">
+                    <img src="./assets/get-in-touch.png" alt="contact us"
+                        class="img-fluid rounded-3 get-in-touch-img">
+                  
+                    <div class="contact-info mb-4">
+                        <div class="contact-item mb-3">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h6 class="contact-label">Call Us</h6>
+                                <p class="contact-value">+91 8820 9011 44</p>
+                            </div>
+                        </div>
+                        <div class="contact-item mb-3">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h6 class="contact-label">Email Us</h6>
+                                <p class="contact-value">aslwallets.in</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h6 class="contact-label">Address</h6>
+                                <p class="contact-value">F-1/28, Katjunagar Jadavpur, Kolkata, West Bengal - 700045</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-lg p-4 p-md-5 rounded-4 mt-4 mt-lg-0 ">
+                        <h4 class="mb-4 text-primary fw-bold ">Send us a Message</h4>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="userName" class="form-label fw-semibold">Full Name</label>
+                                <input type="text" class="form-control bg-light" id="userName" placeholder="John Doe"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="userEmail" class="form-label fw-semibold">Email Address</label>
+                                <input type="email" class="form-control bg-light" id="userEmail"
+                                    placeholder="name@example.com" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="userQuery" class="form-label fw-semibold">Your Query</label>
+                                <textarea class="form-control bg-light" id="userQuery" rows="4"
+                                    placeholder="How can we help you today?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 py-2">Submit Query</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER SECTION ==================== -->
+    <footer class="footer-section py-5 bg-dark text-white">
+        <div class="container-lg">
+            <div class="row mb-4">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="footer-title mb-3">About Us</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">About Company</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Latest Blog</a></li>
+                        <li><a href="#">Pay Guarantee</a></li>
+                        <li><a href="#">Client Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="footer-title mb-3">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">AEPS</a></li>
+                        <li><a href="#">BBPS</a></li>
+                        <li><a href="#">Recharge</a></li>
+                        <li><a href="#">PAN Card</a></li>
+                        <li><a href="#">Tax Filing</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-title mb-3">Legal</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="bg-white bg-opacity-25 my-4">
+
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2026 ASL Wallets Pay. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="social-icons d-flex justify-content-center justify-content-md-end gap-3">
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center"
+                            style="width: 40px; height: 40px; transition: all 0.3s ease;"
+                            onmouseover="this.style.backgroundColor='#1877F2'; this.style.borderColor='#1877F2'"
+                            onmouseout="this.style.backgroundColor='transparent'; this.style.borderColor='var(--bs-light)'"
+                            aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f" style="font-size: 18px;"></i>
+                        </a>
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center"
+                            style="width: 40px; height: 40px; transition: all 0.3s ease;"
+                            onmouseover="this.style.backgroundColor='#1DA1F2'; this.style.borderColor='#1DA1F2'"
+                            onmouseout="this.style.backgroundColor='transparent'; this.style.borderColor='var(--bs-light)'"
+                            aria-label="Twitter">
+                            <i class="fa-brands fa-x-twitter" style="font-size: 18px;"></i>
+                        </a>
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center"
+                            style="width: 40px; height: 40px; transition: all 0.3s ease;"
+                            onmouseover="this.style.backgroundColor='#E1306C'; this.style.borderColor='#E1306C'"
+                            onmouseout="this.style.backgroundColor='transparent'; this.style.borderColor='var(--bs-light)'"
+                            aria-label="Instagram">
+                            <i class="fa-brands fa-instagram" style="font-size: 18px;"></i>
+                        </a>
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center"
+                            style="width: 40px; height: 40px; transition: all 0.3s ease;"
+                            onmouseover="this.style.backgroundColor='#0A66C2'; this.style.borderColor='#0A66C2'"
+                            onmouseout="this.style.backgroundColor='transparent'; this.style.borderColor='var(--bs-light)'"
+                            aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in" style="font-size: 18px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+</body>
+
+</html>
