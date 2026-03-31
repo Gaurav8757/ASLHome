@@ -766,7 +766,7 @@ p {
     text-align: center;
     transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
     border: 1px solid rgba(0, 0, 0, 0.05);
-    height: 300px;
+    height: 230px;
     box-shadow: var(--shadow-sm);
     position: relative;
     overflow: hidden;
@@ -781,8 +781,6 @@ p {
 }
 
 .service-images {
-    /* width: 85%;
-    height: 85%; */
     margin: auto;
     display: flex;
     align-items: center;
@@ -795,8 +793,8 @@ p {
 }
 
 .service-images img {
-    width: 80%;
-    max-width: 80%;
+    width: 90%;
+    max-width: 100%;
     height: auto;
     object-fit: contain;
     transition: all 0.5s ease;
@@ -844,7 +842,7 @@ p {
     bottom: -100%;
     left: 0;
     width: 100%;
-    height: 60%;
+    height: 50%;
     background: linear-gradient(to top, rgba(192, 192, 192, 0.171), rgba(192, 192, 192, 0.171), rgba(192, 192, 192, 0.171), rgba(192, 192, 192, 0.171));
     backdrop-filter: blur(10px);
     display: flex;
@@ -863,9 +861,10 @@ p {
 
 .service-title {
     color: var(--primary-color) !important;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
     transform: translateY(20px);
     opacity: 0;
     transition: all 0.4s ease 0.1s;
