@@ -1,7 +1,9 @@
 /* ==================== ROOT & GENERAL STYLES ==================== */
 :root {
-    --primary-color: #1a237e;
-    --secondary-color: #2c3bc9;
+    /* --primary-color: #1a237e;
+    --secondary-color: #2c3bc9; */
+    --primary-color: #720c43;
+    --secondary-color: #440a66;
     --success-color: #28a745;
     --danger-color: #dc3545;
     --warning-color: #ffc107;
@@ -212,7 +214,7 @@ p {
     color: var(--primary-color) !important;
 }
 
-.navbar.navbar-scrolled .btn-primary {
+.navbar.navbar-scro020c24btn-pr1a237e{
     background-color: var(--primary-color);
     border-color: var(--primary-color);
     color: #fff;
@@ -267,7 +269,8 @@ p {
 .hero-section {
     position: relative;
     min-height: 100vh;
-    background: linear-gradient(135deg, #020c24 0%, #1a237e 60%, #0d1440 100%);
+    /* background: linear-gradient(135deg, #020c24 0%, #1a237e 60%, #0d1440 100%); */
+    background: linear-gradient(135deg, #550b32 0%, #440a66 60%, #580870 100%);
     display: flex;
     align-items: center;
     overflow: hidden;
