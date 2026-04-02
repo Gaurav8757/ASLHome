@@ -1768,7 +1768,162 @@ p {
 }
 
 
+/* ==================== APP DOWNLOAD CTA SECTION ==================== */
+.app-cta-section {
+    background: transparent;
+}
+
+.app-cta-card {
+    position: relative;
+    background: linear-gradient(135deg, #720c43 0%, #5a0a35 40%, #440a66 100%);
+    border-radius: 2rem;
+    padding: 4rem 3rem;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(114, 12, 67, 0.35);
+}
+
+/* Decorative blobs */
+.app-cta-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(0px);
+    pointer-events: none;
+    opacity: 0.18;
+}
+
+.app-cta-blob-1 {
+    width: 380px;
+    height: 380px;
+    background: rgba(255, 255, 255, 0.12);
+    top: -120px;
+    left: -80px;
+    clip-path: ellipse(55% 70% at 40% 40%);
+    border-radius: 62% 38% 46% 54% / 60% 44% 56% 40%;
+}
+
+.app-cta-blob-2 {
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    bottom: -100px;
+    right: -60px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.app-cta-blob-3 {
+    width: 180px;
+    height: 180px;
+    background: rgba(255, 255, 255, 0.08);
+    top: 30%;
+    right: 15%;
+    border-radius: 50%;
+}
+
+.app-cta-content {
+    position: relative;
+    z-index: 2;
+}
+
+.app-cta-eyebrow {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.app-cta-heading {
+    color: #ffffff;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.app-cta-desc {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 550px;
+    margin: 0 auto 2.5rem;
+}
+
+.app-cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.app-store-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: #0d0d0d;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.75rem 1.6rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition: all 0.3s ease;
+    min-width: 160px;
+}
+
+.app-store-btn:hover {
+    background: #1a1a1a;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.app-btn-icon {
+    font-size: 2rem;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.app-btn-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.app-btn-label {
+    font-size: 0.65rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    margin-bottom: 2px;
+}
+
+.app-btn-name {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+@media (max-width: 576px) {
+    .app-cta-card {
+        padding: 3rem 1.5rem;
+        border-radius: 1.25rem;
+    }
+    .app-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .app-store-btn {
+        width: 100%;
+        max-width: 220px;
+        justify-content: center;
+    }
+}
+
 /* ==================== SCROLL TO TOP BUTTON ==================== */
+
 .scroll-top-btn1 {
     position: fixed;
     bottom: 30px;
