@@ -1050,11 +1050,40 @@ p {
 
 /* ==================== PRICING SECTION ==================== */
 .pricing-section {
-    background-color: var(--light-color);
-    background-image: url("./assets/prices.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.pricing-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: 
+        /* Top Left Corner Shapes (Listed first to be ON TOP of dots) */
+        linear-gradient(160deg, var(--primary-color) 11%, transparent 11.2%),
+        linear-gradient(160deg, rgba(114, 12, 67, 0.9) 15%, transparent 15.2%),
+        /* Bottom Right Corner Shapes (The multi-layered ribbons) */
+        linear-gradient(-25deg, var(--secondary-color) 12%, transparent 12.2%),
+        linear-gradient(-25deg, rgba(68, 10, 102, 0.9) 16%, transparent 16.2%),
+        linear-gradient(-25deg, #e9ecef 22%, transparent 22.2%),
+        linear-gradient(-25deg, #f8f9fa 28%, transparent 28.2%),
+        /* Top Left Accent Stripe */
+        linear-gradient(160deg, transparent 18%, rgba(0,0,0,0.03) 18.1%, rgba(0,0,0,0.03) 22%, transparent 22.1%),
+        /* Big Gray Dot Pattern (Moved to bottom of stack) */
+        radial-gradient(rgba(0, 0, 0, 0.06) 2.5px, transparent 0) 0 0 / 45px 45px,
+        /* Overlapping offset large dots (Moved to bottom of stack) */
+        radial-gradient(rgba(0, 0, 0, 0.1) 4px, transparent 0) 22px 22px / 90px 90px;
+}
+
+.pricing-section .container-lg {
+    position: relative;
+    z-index: 2;
 }
 
 .pricing-card {
