@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy – STRPY Digital Payments</title>
+    <meta name="description" content="Read STRPY's Privacy Policy to understand how we collect, use, and protect your personal information and data.">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        :root {
+            --primary: #720c43;
+            --secondary: #440a66;
+            --gradient: linear-gradient(135deg, #440a66, #720c43);
+            --text-dark: #1a1a2e;
+            --text-muted: #6b7280;
+            --border: #e5e7eb;
+            --bg-light: #faf8fc;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            color: var(--text-dark);
+            background: var(--bg-light);
+            line-height: 1.7;
+        }
+
+        /* ── NAVBAR ── */
+        .pp-navbar {
+            background: #fff;
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+
+        .pp-navbar .brand-logo {
+            height: 52px;
+            width: auto;
+        }
+
+        .pp-back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            padding: 0.4rem 1rem;
+            border: 1.5px solid var(--primary);
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .pp-back-btn:hover {
+            background: var(--primary);
+            color: #fff;
+            transform: translateX(-3px);
+        }
+
+        /* ── HERO BANNER ── */
+        .pp-hero {
+            background: var(--gradient);
+            padding: 5rem 0 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pp-hero::before {
+            content: '';
+            position: absolute;
+            top: -60px; right: -60px;
+            width: 350px; height: 350px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+        }
+
+        .pp-hero::after {
+            content: '';
+            position: absolute;
+            bottom: -80px; left: -40px;
+            width: 280px; height: 280px;
+            background: rgba(255,255,255,0.04);
+            border-radius: 50%;
+        }
+
+        .pp-hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: #fff;
+            padding: 0.4rem 1.1rem;
+            border-radius: 50px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            backdrop-filter: blur(8px);
+        }
+
+        .pp-hero h1 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 0.75rem;
+        }
+
+        .pp-hero p {
+            color: rgba(255,255,255,0.8);
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .pp-hero-meta {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .pp-hero-meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: rgba(255,255,255,0.75);
+            font-size: 0.85rem;
+        }
+
+        .pp-hero-meta i {
+            color: #ffc107;
+        }
+
+        /* ── TOC SIDEBAR ── */
+        .pp-toc {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            position: sticky;
+            top: 100px;
+            box-shadow: 0 4px 20px rgba(114,12,67,0.08);
+        }
+
+        .pp-toc h6 {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            padding-bottom: 0.65rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .pp-toc ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .pp-toc ul li a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 0.6rem;
+            border-radius: 0.5rem;
+            color: var(--text-dark);
+            font-size: 0.85rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .pp-toc ul li a i {
+            font-size: 0.65rem;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+
+        .pp-toc ul li a:hover {
+            background: rgba(114,12,67,0.07);
+            color: var(--primary);
+            padding-left: 1rem;
+        }
+
+        /* ── POLICY CARD ── */
+        .pp-card {
+            background: #fff;
+            border-radius: 1.25rem;
+            border: 1px solid var(--border);
+            overflow: hidden;
+            box-shadow: 0 4px 24px rgba(114,12,67,0.06);
+            margin-bottom: 2rem;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .pp-card:hover {
+            box-shadow: 0 8px 40px rgba(114,12,67,0.12);
+        }
+
+        .pp-card-header {
+            background: linear-gradient(135deg, rgba(114,12,67,0.05), rgba(68,10,102,0.05));
+            border-bottom: 1px solid var(--border);
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .pp-card-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 0.85rem;
+            background: var(--gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .pp-card-icon i {
+            color: #fff;
+            font-size: 1.2rem;
+        }
+
+        .pp-card-header h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin: 0;
+        }
+
+        .pp-card-body {
+            padding: 2rem;
+        }
+
+        .pp-card-body p {
+            color: #4b5563;
+            font-size: 0.97rem;
+            line-height: 1.85;
+            margin: 0;
+        }
+
+        /* Special exception box */
+        .pp-exception-box {
+            background: linear-gradient(135deg, rgba(255,193,7,0.08), rgba(114,12,67,0.06));
+            border: 1px solid rgba(255,193,7,0.3);
+            border-left: 4px solid #ffc107;
+            border-radius: 0.75rem;
+            padding: 1.25rem 1.5rem;
+            margin-top: 1.25rem;
+        }
+
+        .pp-exception-box p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #374151;
+        }
+
+        .pp-exception-box strong {
+            color: var(--primary);
+        }
+
+        /* ── FOOTER ── */
+        .pp-footer {
+            background: #1a1a2e;
+            padding: 2.5rem 0;
+            margin-top: 4rem;
+        }
+
+        .pp-footer p {
+            color: rgba(255,255,255,0.55);
+            font-size: 0.85rem;
+            margin: 0;
+        }
+
+        .pp-footer a {
+            color: rgba(255,255,255,0.75);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .pp-footer a:hover {
+            color: #ffc107;
+        }
+
+        /* ── CONTACT CTA ── */
+        .pp-cta {
+            background: var(--gradient);
+            border-radius: 1.5rem;
+            padding: 3rem 2.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pp-cta::before {
+            content: '';
+            position: absolute;
+            top: -50px; right: -50px;
+            width: 200px; height: 200px;
+            background: rgba(255,255,255,0.06);
+            border-radius: 50%;
+        }
+
+        .pp-cta h4 {
+            color: #fff;
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .pp-cta p {
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .pp-cta a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #fff;
+            color: var(--primary);
+            font-weight: 700;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .pp-cta a:hover {
+            background: #ffc107;
+            color: #1a1a2e;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 991px) {
+            .pp-toc { position: static; margin-bottom: 2rem; }
+        }
+
+        @media (max-width: 768px) {
+            .pp-hero { padding: 3.5rem 0 3rem; }
+            .pp-card-body { padding: 1.5rem; }
+            .pp-card-header { padding: 1.25rem 1.5rem; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="pp-navbar">
+        <div class="container-lg d-flex align-items-center justify-content-between">
+            <a href="index.html">
+                <img src="./assets/logo.png" alt="STRPY Logo" class="pp-navbar-logo" style="height:50px;">
+            </a>
+            <a href="index.html" class="pp-back-btn">
+                <i class="fa-solid fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="pp-hero">
+        <div class="container-lg position-relative" style="z-index:2;">
+            <div class="pp-hero-badge">
+                <i class="fa-solid fa-shield-halved"></i> Legal Document
+            </div>
+            <h1>Privacy Policy</h1>
+            <p>How STRPY collects, uses, and protects your personal information</p>
+            <div class="pp-hero-meta">
+                <span><i class="fa-solid fa-calendar-check"></i> Effective: January 2024</span>
+                <span><i class="fa-solid fa-rotate"></i> Last Updated: April 2026</span>
+                <span><i class="fa-solid fa-globe"></i> Applicable: India</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="container-lg py-5">
+        <div class="row g-5">
+
+            <!-- TOC Sidebar -->
+            <div class="col-lg-3 d-none d-lg-block">
+                <div class="pp-toc">
+                    <h6><i class="fa-solid fa-list-ul me-1"></i> Contents</h6>
+                    <ul>
+                        <li><a href="#definition"><i class="fa-solid fa-circle"></i> Definition & Description</a></li>
+                        <li><a href="#exception"><i class="fa-solid fa-circle"></i> Exception to Policy</a></li>
+                        <li><a href="#use"><i class="fa-solid fa-circle"></i> Use of Personal Data</a></li>
+                        <li><a href="#disclosure"><i class="fa-solid fa-circle"></i> Disclosure of Data</a></li>
+                        <li><a href="#security"><i class="fa-solid fa-circle"></i> Security Practices</a></li>
+                        <li><a href="#links"><i class="fa-solid fa-circle"></i> Links to Other Sites</a></li>
+                        <li><a href="#updates"><i class="fa-solid fa-circle"></i> Policy Updates</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Policy Content -->
+            <div class="col-lg-9">
+
+                <!-- Intro -->
+                <div class="pp-card mb-4">
+                    <div class="pp-card-body">
+                        <p>
+                            <strong style="color:var(--primary)">STRPY</strong> is committed to appreciating and respecting the choice and privacy of its user base and business associates when they use our website and services. This statement highlights and gives information about the privacy practices employed by us in relation to the personal information we hold of our business associates and users.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Section 1: Definition -->
+                <div class="pp-card" id="definition">
+                    <div class="pp-card-header">
+                        <div class="pp-card-icon"><i class="fa-solid fa-book-open"></i></div>
+                        <h2>Definition & Description</h2>
+                    </div>
+                    <div class="pp-card-body">
+                        <p>
+                            For the purposes of this privacy policy, <strong>personal information and data</strong> include the data and information that can be identified or linked to specific users. This information may include:
+                        </p>
+                        <ul style="color:#4b5563; margin: 1rem 0; padding-left:1.25rem; line-height:2;">
+                            <li>Name, address, mailing address, and email ID</li>
+                            <li>Telephone and mobile phone numbers</li>
+                            <li>Debit/credit card details, cardholder name, expiration date</li>
+                            <li>Mobile recharge, data card, and DTH service information</li>
+                            <li>Electricity connection data and billing details</li>
+                            <li>Any other details voluntarily provided while using STRPY services</li>
+                        </ul>
+
+                        <div class="pp-exception-box" id="exception">
+                            <p>
+                                <strong>⚠ Exception to STRPY Privacy Policy:</strong> Data and information provided by users/business associates in public forums, live chat rooms, blogs, social networking sites, discussion boards, classifieds, or community spaces are <strong>not deemed confidential</strong> and hence are not considered as personal/sensitive information under STRPY's privacy policy. Such information is not protected under this policy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2: Use of Data -->
+                <div class="pp-card" id="use">
+                    <div class="pp-card-header">
+                        <div class="pp-card-icon"><i class="fa-solid fa-database"></i></div>
+                        <h2>Use of Personal Information & Data</h2>
+                    </div>
+                    <div class="pp-card-body">
+                        <p>STRPY uses the personal data and information given by users/business associates to provide specific services explicitly requested. Personal information is used to:</p>
+                        <ul style="color:#4b5563; margin: 1rem 0; padding-left:1.25rem; line-height:2.2;">
+                            <li>Troubleshoot concerns and resolve disputes</li>
+                            <li>Collect money and promote safe, secure services</li>
+                            <li>Inform users and associates about our services, offers, and updates</li>
+                            <li>Assess the interest of users and associates in our services</li>
+                            <li>Prevent errors, criminal activity, and fraud</li>
+                            <li>Enforce terms and conditions of service</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Section 3: Disclosure -->
+                <div class="pp-card" id="disclosure">
+                    <div class="pp-card-header">
+                        <div class="pp-card-icon"><i class="fa-solid fa-share-nodes"></i></div>
+                        <h2>Disclosure of Information & Data</h2>
+                    </div>
+                    <div class="pp-card-body">
+                        <p>
+                            STRPY shares sensitive or private confidential data or information with an external organization <strong>only when it is necessary</strong> to enable us to provide services to business associates and users. We may also share information when:
+                        </p>
+                        <ul style="color:#4b5563; margin: 1rem 0; padding-left:1.25rem; line-height:2.2;">
+                            <li>Necessary to complete a legitimate transaction</li>
+                            <li>Required for reporting purposes under applicable terms and conditions</li>
+                            <li>Required or permitted by applicable law</li>
+                        </ul>
+                        <p style="margin-top: 0.75rem;">
+                            In no other scenario shall we share the confidential and personal data and information of our users and business associates.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Section 4: Security -->
+                <div class="pp-card" id="security">
+                    <div class="pp-card-header">
+                        <div class="pp-card-icon"><i class="fa-solid fa-lock"></i></div>
+                        <h2>Security Practices</h2>
+                    </div>
+                    <div class="pp-card-body">
+                        <p>
+                            STRPY undertakes necessary and reasonable precautions for maintaining the confidentiality and privacy of data and information of our users and business associates. For this purpose, we:
+                        </p>
+                        <ul style="color:#4b5563; margin: 1rem 0; padding-left:1.25rem; line-height:2.2;">
+                            <li>Provide <strong>restricted access</strong> to persons who may be required to assess the data and information (on a need-to-know basis)</li>
+                            <li>Provide necessary <strong>training to employees</strong> for ensuring safe and proper handling of data</li>
+                            <li>Employ industry-standard security measures to protect your information</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Section 5: Links -->
+                <div class="pp-card" id="links">
+                    <div class="pp-card-header">
+                        <div class="pp-card-icon"><i class="fa-solid fa-link"></i></div>
+                        <h2>Links to Other Websites</h2>
+                    </div>
+                    <div class="pp-card-body">
+                        <p>
+                            The STRPY website contains links to other websites. Users should understand that when they click on any of these links, they enter into another website. <strong>We assume no responsibility for these external websites.</strong>
+                        </p>
+                        <p style="margin-top: 1rem;">
+                            We encourage users to read and understand the privacy statements of these websites, which may differ from STRPY's privacy policy. Users and associates are solely responsible for ensuring the security and secrecy of their membership accounts and passwords.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Section 6: Updates -->
+                <div class="pp-card" id="updates">
+                    <div class="pp-card-header">
+                        <div class="pp-card-icon"><i class="fa-solid fa-rotate"></i></div>
+                        <h2>Privacy Policy Updates</h2>
+                    </div>
+                    <div class="pp-card-body">
+                        <p>
+                            STRPY has the full rights to make changes to the data privacy practices it uses/employs, and to update this privacy statement whenever a need arises. All updates and changes will be made available on our website. We encourage users to review this policy periodically to stay informed about how we protect your data.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="pp-cta mt-4">
+                    <h4>Questions About Our Privacy Policy?</h4>
+                    <p>Our team is always ready to clarify any concern you may have about data privacy.</p>
+                    <a href="index.html#contact">
+                        <i class="fa-solid fa-envelope"></i> Contact Us
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <!-- ==================== FOOTER SECTION ==================== -->
+    <footer class="footer-section py-5 mx-auto bg-dark text-white">
+        <div class="container-lg">
+            <div class="row mb-4">
+                <div class="col-md-4 col-6 mb-4 mb-md-0">
+                    <h5 class="footer-title mb-3">About Us</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">About Company</a></li>
+                        <li><a href="index.html#contact">Contact Us</a></li>
+                        <li><a href="#">Latest Blog</a></li>
+                        <li><a href="#">Pay Guarantee</a></li>
+                        <li><a href="#">Client Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-6 mb-4 mb-md-0">
+                    <h5 class="footer-title mb-3">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html#services">AEPS</a></li>
+                        <li><a href="index.html#services">BBPS</a></li>
+                        <li><a href="index.html#services">Recharge</a></li>
+                        <li><a href="index.html#services">PAN Card</a></li>
+                        <li><a href="index.html#services">Tax Filing</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-6">
+                    <h5 class="footer-title mb-3">Legal</h5>
+                    <ul class="footer-links">
+                        <li><a href="p&p.html">Privacy Policy</a></li>
+                        <li><a href="t&c.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="bg-white bg-opacity-25 my-4">
+
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2026 STRPY. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="social-icons d-flex justify-content-center justify-content-md-end gap-3">
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center"
+                            style="width: 40px; height: 40px; transition: all 0.3s ease;"
+                            onmouseover="this.style.backgroundColor='#1877F2'; this.style.borderColor='#1877F2'"
+                            onmouseout="this.style.backgroundColor='transparent'; this.style.borderColor='var(--bs-light)'"
+                            aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f" style="font-size: 18px;"></i>
+                        </a>
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center"
+                            style="width: 40px; height: 40px; transition: all 0.3s ease;"
+                            onmouseover="this.style.backgroundColor='#1DA1F2'; this.style.borderColor='#1DA1F2'"
+                            onmouseout="this.style.backgroundColor='transparent'; this.style.borderColor='var(--bs-light)'"
+                            aria-label="Twitter">
+                            <i class="fa-brands fa-x-twitter" style="font-size: 18px;"></i>
+                        </a>
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center"
+                            style="width: 40px; height: 40px; transition: all 0.3s ease;"
+                            onmouseover="this.style.backgroundColor='#E1306C'; this.style.borderColor='#E1306C'"
+                            onmouseout="this.style.backgroundColor='transparent'; this.style.borderColor='var(--bs-light)'"
+                            aria-label="Instagram">
+                            <i class="fa-brands fa-instagram" style="font-size: 18px;"></i>
+                        </a>
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center"
+                            style="width: 40px; height: 40px; transition: all 0.3s ease;"
+                            onmouseover="this.style.backgroundColor='#0A66C2'; this.style.borderColor='#0A66C2'"
+                            onmouseout="this.style.backgroundColor='transparent'; this.style.borderColor='var(--bs-light)'"
+                            aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in" style="font-size: 18px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn1" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- Custom JS -->
+    <script src="index.js"></script>
+</body>
+
+</html>
