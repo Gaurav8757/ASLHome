@@ -1691,103 +1691,110 @@ p {
 }
 
 /* ==================== MISSION & VISION SECTION ==================== */
-
 .mission-vision-section {
-    width: 100%;
-    min-height: 500px;
     position: relative;
-    background: repeating-linear-gradient(170deg,
-            rgba(255, 255, 255, 0.07) 1px,
-            rgba(255, 255, 255, 0.07) 0.1px,
-            transparent 2.1px,
-            transparent 1px), linear-gradient(135deg, #55053a 0%, #720c43 60%, #35084e 100%);
+    padding: 8rem 0;
+    background: linear-gradient(135deg, #2e084e 0%, #720c43 50%, #440a66 100%);
     overflow: hidden;
+    z-index: 1;
 }
 
-/* First wave */
-.mission-vision-section::before {
-    content: "";
+/* Background floating orbs for depth */
+.mv-orb {
     position: absolute;
-    bottom: 20;
-    left: 0;
-    width: 100%;
-    height: 280px;
-    background: rgba(255, 255, 255, 0.06);
-    clip-path: path("M0,300 C300,350 500,200 800,260 C1100,320 1300,180 1440,230 L1440,600 L0,600 Z");
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.2;
+    z-index: -1;
+    animation: mvOrbFloat 15s ease-in-out infinite;
+}
+.mv-orb-1 { width: 300px; height: 300px; background: #ffc107; top: 10%; right: 5%; }
+.mv-orb-2 { width: 400px; height: 400px; background: #00d2ff; bottom: 10%; left: -5%; animation-delay: -5s; }
+
+@keyframes mvOrbFloat {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(-30px, 40px) scale(1.1); }
 }
 
-/* Second wave */
-.mission-vision-section::after {
-    content: "";
+/* Liquid waves at the bottom */
+.mv-wave {
     position: absolute;
-    bottom: 20;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 260px;
-    background: rgba(255, 255, 255, 0.04);
-    clip-path: path("M0,350 C350,400 550,260 900,300 C1200,340 1350,220 1440,260 L1440,600 L0,600 Z");
+    height: 150px;
+    z-index: -1;
 }
+.mv-wave-1 { background: rgba(255, 255, 255, 0.05); clip-path: polygon(0 60%, 20% 40%, 40% 65%, 60% 35%, 80% 55%, 100% 30%, 100% 100%, 0 100%); }
+.mv-wave-2 { background: rgba(255, 255, 255, 0.03); clip-path: polygon(0 75%, 25% 55%, 50% 80%, 75% 45%, 100% 70%, 100% 100%, 0 100%); }
 
 .mission-vision-section .section-title,
 .mission-vision-section .vision-text,
-.mission-vision-section .mission-text,
-.mission-vision-section h5,
-.mission-vision-section p {
+.mission-vision-section h2, .mission-vision-section h4, .mission-vision-section p {
     color: #ffffff !important;
 }
 
-.vision-box,
-.mission-box {
-    background: rgba(121, 121, 121, 0.185);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 2rem;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03);
-    transition: all 0.4s ease;
+.vision-box {
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 2.5rem;
+    padding: 3.5rem !important;
     height: 100%;
-    color: #ffffff;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 
-.vision-box:hover,
-.mission-box:hover {
-    transform: translateY(-5px);
-    background: rgba(109, 108, 108, 0.281);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+.vision-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, #ffc107, transparent);
 }
 
-.vision-text.lead {
-    font-weight: 600;
-    color: #ffffff !important;
+.vision-box:hover {
+    transform: translateY(-12px) scale(1.02);
+    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .mission-card {
-    background: rgba(109, 108, 108, 0.281);
-    border-radius: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(15px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.8rem;
+    padding: 2rem !important;
+    transition: all 0.4s ease;
     height: 100%;
-    color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .mission-card:hover {
-    transform: translateY(-10px);
-    background: rgba(109, 108, 108, 0.281);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-    border-color: var(--light-color);
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #ffc107;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .mission-icon {
-    width: 60px;
-    height: 60px;
-    background: rgba(114, 12, 67, 0.1);
-    border-radius: 1rem;
+    width: 65px;
+    height: 65px;
+    background: linear-gradient(135deg, #720c43, #440a66);
+    border-radius: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
-    color: var(--white-color) !important;
+    font-size: 1.8rem;
+    color: #ffc107 !important;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .mission-title {
@@ -1797,10 +1804,19 @@ p {
 }
 
 .mission-detail-box {
-    background: rgba(145, 145, 145, 0.274);
+    background: rgba(0, 0, 0, 0.2) !important;
     backdrop-filter: blur(10px);
-    color: #ffffff !important;
-    border-left: 4px solid var(--primary-color) !important;
+    -webkit-backdrop-filter: blur(10px);
+    border-left: 5px solid #ffc107 !important;
+    border-radius: 1.2rem;
+    padding: 2.5rem !important;
+    margin-top: 2rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.mission-detail-box:hover {
+    transform: perspective(1000px) rotateX(2deg);
 }
 
 /* ==================== B2B SECTION ==================== */
