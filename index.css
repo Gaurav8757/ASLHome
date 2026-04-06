@@ -2650,6 +2650,11 @@ p {
     transition: background 0.3s ease;
 }
 
+.store-card:hover {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    transition-duration: 1.5s;
+}
+
 /* Image fills a fixed square box */
 .store-card-img {
     width: 36px;
