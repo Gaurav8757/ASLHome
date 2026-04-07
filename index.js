@@ -112,7 +112,7 @@ function initScrollAnimations() {
         });
 
         // Add a subtle parallax/speed effect to the new carousel section using GSAP scrubber
-        const carouselSection = document.querySelector('.destinations-carousel-section');
+        const carouselSection = document.querySelector('.container-slider');
         if (carouselSection) {
             gsap.to(carouselSection, {
                 backgroundPosition: "50% 100%",
