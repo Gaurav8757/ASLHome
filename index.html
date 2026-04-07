@@ -14,6 +14,12 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="index.css">
 </head>
@@ -111,7 +117,7 @@
                 <!-- Right: Visual -->
                 <div class="col-lg-6 d-flex justify-content-center position-relative">
                     <div class="hero-img-wrapper">
-                        <img src="./assets/p1.png" alt="Digital Banking Services" class="hero-main-img">
+                        <img src="./assets/p1.png" alt="Digital Banking Services" class="hero-main-img" fetchpriority="high" decoding="sync">
                         <!-- Floating service badges -->
                         <div class="hero-float-badge badge-aeps">
                             <i class="fa-solid fa-fingerprint"></i> AEPS
@@ -163,7 +169,7 @@
                 <div class="col-lg-5">
                     <div class="about-img-container">
                         <div class="about-img-wrapper">
-                            <img src="./assets/about_strpy.png" alt="About STRPY" class="about-img">
+                            <img src="./assets/about_strpy.png" alt="About STRPY" class="about-img" loading="lazy" decoding="async">
                         </div>
                         <!-- Floating Badge -->
                         <div class="about-stat-badge">
@@ -274,7 +280,7 @@
                     <div class="service-card shadow-sm">
                         <div class="service-icon"><i class="fa-solid fa-fingerprint"></i></div>
                         <div class="service-images">
-                            <img src="https://img.icons8.com/3d-fluency/200/touch-id.png" alt="AEPS Service">
+                            <img src="https://img.icons8.com/3d-fluency/200/touch-id.png" alt="AEPS Service" loading="lazy" decoding="async">
                         </div>
                         <div class="card-body px-0">
                             <h4 class="service-title">AEPS</h4>
@@ -289,7 +295,7 @@
                     <div class="service-card shadow-sm">
                         <div class="service-icon"><i class="fa-solid fa-wallet"></i></div>
                         <div class="service-images">
-                            <img src="https://img.icons8.com/3d-fluency/200/cash-in-hand.png" alt="Payout Service">
+                            <img src="https://img.icons8.com/3d-fluency/200/cash-in-hand.png" alt="Payout Service" loading="lazy" decoding="async">
                         </div>
                         <div class="card-body px-0">
                             <h4 class="service-title">Payout</h4>
@@ -304,7 +310,7 @@
                     <div class="service-card shadow-sm">
                         <div class="service-icon"><i class="fa-solid fa-file-invoice"></i></div>
                         <div class="service-images">
-                            <img src="https://img.icons8.com/3d-fluency/200/bill.png" alt="BBPS Service">
+                            <img src="https://img.icons8.com/3d-fluency/200/bill.png" alt="BBPS Service" loading="lazy" decoding="async">
                         </div>
                         <div class="card-body px-0">
                             <h4 class="service-title">BBPS</h4>
@@ -319,7 +325,7 @@
                     <div class="service-card shadow-sm">
                         <div class="service-icon"><i class="fa-solid fa-tablet"></i></div>
                         <div class="service-images">
-                            <img src="https://img.icons8.com/3d-fluency/200/pos-terminal.png" alt="Micro ATM Service">
+                            <img src="https://img.icons8.com/3d-fluency/200/pos-terminal.png" alt="Micro ATM Service" loading="lazy" decoding="async">
                         </div>
                         <div class="card-body px-0">
                             <h4 class="service-title">Micro ATM</h4>
@@ -334,7 +340,7 @@
                     <div class="service-card shadow-sm">
                         <div class="service-icon"><i class="fa-solid fa-mobile-screen"></i></div>
                         <div class="service-images">
-                            <img src="https://img.icons8.com/3d-fluency/200/smartphone.png" alt="Mobile Recharge">
+                            <img src="https://img.icons8.com/3d-fluency/200/smartphone.png" alt="Mobile Recharge" loading="lazy" decoding="async">
                         </div>
                         <div class="card-body px-0">
                             <h4 class="service-title">Recharge</h4>
@@ -349,7 +355,7 @@
                     <div class="service-card shadow-sm">
                         <div class="service-icon"><i class="fa-solid fa-money-bill-transfer"></i></div>
                         <div class="service-images">
-                            <img src="https://img.icons8.com/3d-fluency/200/money-transfer.png" alt="DMT Service">
+                            <img src="https://img.icons8.com/3d-fluency/200/money-transfer.png" alt="DMT Service" loading="lazy" decoding="async">
                         </div>
                         <div class="card-body px-0">
                             <h4 class="service-title">DMT</h4>
@@ -364,7 +370,7 @@
                     <div class="service-card shadow-sm">
                         <div class="service-icon"><i class="fa-solid fa-id-card"></i></div>
                         <div class="service-images">
-                            <img src="https://img.icons8.com/3d-fluency/200/debit-card.png" alt="PAN Card Service">
+                            <img src="https://img.icons8.com/3d-fluency/200/debit-card.png" alt="PAN Card Service" loading="lazy" decoding="async">
                         </div>
                         <div class="card-body px-0">
                             <h4 class="service-title">PAN Card</h4>
@@ -380,7 +386,7 @@
                         <div class="service-icon"><i class="fa-solid fa-plane-departure"></i></div>
                         <div class="service-images">
                             <img src="https://img.icons8.com/3d-fluency/200/airplane-take-off.png"
-                                alt="Flight Booking Service">
+                                alt="Flight Booking Service" loading="lazy" decoding="async">
                         </div>
                         <div class="card-body px-0">
                             <h4 class="service-title">Flight Booking</h4>
@@ -417,7 +423,7 @@
             <div class="container-lg">
                 <div class="row align-items-center justify-content-center">
                     <div class="video-mockup-frame">
-                        <img src="./assets/vid.gif" alt="Digital Payment Services Video" class="img-fluid">
+                        <img src="./assets/vid.gif" alt="Digital Payment Services Video" class="img-fluid" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -428,17 +434,17 @@
     <section class="slider bg-light">
         <div class="slide-track">
             <!-- 11 Partner Logos -->
-            <div class="slide"><img src="assets/aeps.svg" alt="AEPS" /></div>
-            <div class="slide"><img src="assets/bharat_connect.svg" alt="Bharat Connect" /></div>
-            <div class="slide"><img src="assets/phonepe.svg" alt="PhonePe" /></div>
-            <div class="slide"><img src="assets/npci.svg" alt="NPCI" /></div>
-            <div class="slide"><img src="assets/nsdl.svg" alt="NSDL" /></div>
-            <div class="slide"><img src="assets/uti.svg" alt="UTI" /></div>
-            <div class="slide"><img src="assets/airtel-payment.svg" alt="Airtel" /></div>
-            <div class="slide"><img src="assets/hdfc.svg" alt="HDFC" /></div>
-            <div class="slide"><img src="assets/yesbank.svg" alt="Yes Bank" /></div>
-            <div class="slide"><img src="assets/idfc.svg" alt="IDFC" /></div>
-            <div class="slide"><img src="assets/dbs.svg" alt="DBS" /></div>
+            <div class="slide"><img src="assets/aeps.svg" alt="AEPS" loading="lazy" /></div>
+            <div class="slide"><img src="assets/bharat_connect.svg" alt="Bharat Connect" loading="lazy" /></div>
+            <div class="slide"><img src="assets/phonepe.svg" alt="PhonePe" loading="lazy" /></div>
+            <div class="slide"><img src="assets/npci.svg" alt="NPCI" loading="lazy" /></div>
+            <div class="slide"><img src="assets/nsdl.svg" alt="NSDL" loading="lazy" /></div>
+            <div class="slide"><img src="assets/uti.svg" alt="UTI" loading="lazy" /></div>
+            <div class="slide"><img src="assets/airtel-payment.svg" alt="Airtel" loading="lazy" /></div>
+            <div class="slide"><img src="assets/hdfc.svg" alt="HDFC" loading="lazy" /></div>
+            <div class="slide"><img src="assets/yesbank.svg" alt="Yes Bank" loading="lazy" /></div>
+            <div class="slide"><img src="assets/idfc.svg" alt="IDFC" loading="lazy" /></div>
+            <div class="slide"><img src="assets/dbs.svg" alt="DBS" loading="lazy" /></div>
 
             <!-- Duplicates for seamless scroll -->
             <div class="slide"><img src="assets/aeps.svg" alt="AEPS" /></div>
@@ -562,7 +568,7 @@
             <div class="row justify-content-between align-items-center">
                 <div class="col-md-6 mb-4 mb-lg-0">
                     <h2 class="section-title mb-4">Our Networks</h2>
-                    <img src="./assets/works.png" alt="User Network" class="stats-network-img">
+                    <img src="./assets/works.png" alt="User Network" class="stats-network-img" loading="lazy" decoding="async">
                 </div>
                 <div class="col-md-6 ps-md-4">
                     <div class="row g-3">
@@ -803,7 +809,7 @@
                 <!-- Testimonial 1: Anuj Singh -->
                 <li class="card">
                     <div class="img-wrapper">
-                        <img src="assets/t1.png" alt="Anuj Singh">
+                        <img src="assets/t1.png" alt="Anuj Singh" loading="lazy" decoding="async">
                     </div>
                     <div class="card-content">
                         <h3>Anuj Singh</h3>
@@ -822,7 +828,7 @@
                 <!-- Testimonial 2: Simran Kaur -->
                 <li class="card">
                     <div class="img-wrapper">
-                        <img src="assets/t2.png" alt="Simran Kaur">
+                        <img src="assets/t2.png" alt="Simran Kaur" loading="lazy" decoding="async">
                     </div>
                     <div class="card-content">
                         <h3>Simran Kaur</h3>
@@ -841,7 +847,7 @@
                 <!-- Testimonial 3: Vikram Patel -->
                 <li class="card">
                     <div class="img-wrapper">
-                        <img src="assets/t3.png" alt="Vikram Patel">
+                        <img src="assets/t3.png" alt="Vikram Patel" loading="lazy" decoding="async">
                     </div>
                     <div class="card-content">
                         <h3>Vikram Patel</h3>
@@ -860,7 +866,7 @@
                 <!-- Testimonial 4: Anjali Desai -->
                 <li class="card">
                     <div class="img-wrapper">
-                        <img src="assets/t4.png" alt="Anjali Desai">
+                        <img src="assets/t4.png" alt="Anjali Desai" loading="lazy" decoding="async">
                     </div>
                     <div class="card-content">
                         <h3>Anjali Desai</h3>
@@ -879,7 +885,7 @@
                 <!-- Testimonial 5: Amit Kumar -->
                 <li class="card">
                     <div class="img-wrapper">
-                        <img src="assets/t5.png" alt="Amit Kumar">
+                        <img src="assets/t5.png" alt="Amit Kumar" loading="lazy" decoding="async">
                     </div>
                     <div class="card-content">
                         <h3>Amit Kumar</h3>
@@ -933,7 +939,7 @@
                                 aria-label="Get it on Google Play">
                                 <div class="store-card">
                                     <img src="./assets/playstore.png" alt="Get it on Google Play"
-                                        class="store-card-img">
+                                        class="store-card-img" loading="lazy" decoding="async">
                                     <div class="store-card-text">
                                         <span class="store-card-label">GET IT ON</span>
                                         <span class="store-card-name">Google Play</span>
@@ -956,7 +962,7 @@
                 <div class="col-lg-6 d-flex justify-content-center align-items-center">
                     <div class="app-img-wrapper">
                         <div class="app-img-glow"></div>
-                        <img src="./assets/pointLeft.png" alt="STRPY Mobile App" class="app-phone-img">
+                        <img src="./assets/pointLeft.png" alt="STRPY Mobile App" class="app-phone-img" loading="lazy" decoding="async">
                         <!-- Floating stat badges -->
                         <div class="app-float-stat app-float-stat-1">
                             <i class="fa-solid fa-star text-warning"></i>
@@ -1119,7 +1125,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-5 mb-4 mb-lg-0">
                     <h2 class="section-title mb-4">Frequently Asked Questions</h2>
-                    <img src="assets/p2.svg" alt="FAQ" class="img-fluid rounded-3 faq-main-img">
+                    <img src="assets/p2.svg" alt="FAQ" class="img-fluid rounded-3 faq-main-img" loading="lazy" decoding="async">
                 </div>
                 <div class="col-lg-7 ps-lg-4">
                     <div class="accordion" id="faqAccordion">
@@ -1236,7 +1242,7 @@
         <div class="container-lg">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb- mb-lg-0">
-                    <img src="./assets/get-in-touch.png" alt="contact us" class="img-fluid rounded-3 get-in-touch-img">
+                    <img src="./assets/get-in-touch.png" alt="contact us" class="img-fluid rounded-3 get-in-touch-img" loading="lazy" decoding="async">
 
                     <div class="contact-info mb-4">
                         <div class="contact-item mb-3">
