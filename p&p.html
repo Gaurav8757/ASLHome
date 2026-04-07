@@ -31,7 +31,10 @@
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
-        html { scroll-behavior: smooth; }
+        html { 
+            scroll-behavior: smooth; 
+            scroll-padding-top: 120px;
+        }
 
         body {
             font-family: 'Inter', 'Segoe UI', sans-serif;
@@ -172,35 +175,42 @@
             border-bottom: 2px solid var(--border);
         }
 
-        .pp-toc ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .pp-toc ul li a {
+        .pp-toc .nav-link {
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            padding: 0.5rem 0.6rem;
+            padding: 0.6rem 0.8rem;
             border-radius: 0.5rem;
             color: var(--text-dark);
             font-size: 0.85rem;
             text-decoration: none;
             font-weight: 500;
-            transition: all 0.2s ease;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
         }
 
-        .pp-toc ul li a i {
+        .pp-toc .nav-link i {
             font-size: 0.65rem;
             color: var(--primary);
             flex-shrink: 0;
+            transition: color 0.3s ease;
         }
 
-        .pp-toc ul li a:hover {
-            background: rgba(114,12,67,0.07);
+        .pp-toc .nav-link:hover {
+            background: rgba(114,12,67,0.05);
             color: var(--primary);
-            padding-left: 1rem;
+            transform: translateX(5px);
+        }
+
+        .pp-toc .nav-link.active {
+            background: var(--gradient) !important;
+            color: #fff !important;
+            box-shadow: 0 4px 12px rgba(114,12,67,0.2);
+            padding-left: 1.1rem;
+        }
+
+        .pp-toc .nav-link.active i {
+            color: #ffc107;
         }
 
         /* ── POLICY CARD ── */
@@ -372,7 +382,7 @@
     </style>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#pp-toc-sidebar" data-bs-offset="120">
 
     <!-- NAVBAR -->
     <nav class="pp-navbar">
@@ -407,18 +417,16 @@
         <div class="row g-5">
 
             <!-- TOC Sidebar -->
-            <div class="col-lg-3 d-none d-lg-block">
-                <div class="pp-toc">
+            <div class="col-lg-3 d-none d-lg-block position-sticky" style="top: 100px; align-self: flex-start; z-index: 10;">
+                <div class="pp-toc nav flex-column" id="pp-toc-sidebar">
                     <h6><i class="fa-solid fa-list-ul me-1"></i> Contents</h6>
-                    <ul>
-                        <li><a href="#definition"><i class="fa-solid fa-circle"></i> Definition & Description</a></li>
-                        <li><a href="#exception"><i class="fa-solid fa-circle"></i> Exception to Policy</a></li>
-                        <li><a href="#use"><i class="fa-solid fa-circle"></i> Use of Personal Data</a></li>
-                        <li><a href="#disclosure"><i class="fa-solid fa-circle"></i> Disclosure of Data</a></li>
-                        <li><a href="#security"><i class="fa-solid fa-circle"></i> Security Practices</a></li>
-                        <li><a href="#links"><i class="fa-solid fa-circle"></i> Links to Other Sites</a></li>
-                        <li><a href="#updates"><i class="fa-solid fa-circle"></i> Policy Updates</a></li>
-                    </ul>
+                    <a class="nav-link mb-1" href="#definition"><i class="fa-solid fa-circle"></i> Definition & Description</a>
+                    <a class="nav-link mb-1" href="#exception"><i class="fa-solid fa-circle"></i> Exception to Policy</a>
+                    <a class="nav-link mb-1" href="#use"><i class="fa-solid fa-circle"></i> Use of Personal Data</a>
+                    <a class="nav-link mb-1" href="#disclosure"><i class="fa-solid fa-circle"></i> Disclosure of Data</a>
+                    <a class="nav-link mb-1" href="#security"><i class="fa-solid fa-circle"></i> Security Practices</a>
+                    <a class="nav-link mb-1" href="#links"><i class="fa-solid fa-circle"></i> Links to Other Sites</a>
+                    <a class="nav-link mb-1" href="#updates"><i class="fa-solid fa-circle"></i> Policy Updates</a>
                 </div>
             </div>
 
