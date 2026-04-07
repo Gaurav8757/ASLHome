@@ -2524,15 +2524,15 @@ p {
     }
 
     .faq-section {
-        padding: 2rem 1rem;
+        padding: 2rem 0.5rem;
     }
 
     .faq-main-img {
         margin: auto;
         width: 100%;
         height: 100%;
-        max-width: 200px;
-        max-height: 200px;
+        max-width: 300px;
+        max-height: 300px;
     }
 
     .footer-section {
@@ -2624,6 +2624,15 @@ p {
 .top-retailers{
     font-size: 22px !important;
     margin: auto;
+}
+.accordion-body {
+    font-size: 0.9rem !important;
+}
+.contact-value{
+    font-size: 0.9rem !important;
+}
+.contact-form-section{
+    font-size: 0.9rem !important;
 }
 
     /* ==================== UTILITY CLASSES ==================== */
