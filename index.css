@@ -161,19 +161,13 @@ p {
 .navbar.navbar-transparent .brand-logo {
     color: #ffffff !important;
     height: 60px;
-    width: 150px;
     object-fit: contain;
 }
 
 @media (max-width: 991px) {
     .navbar.navbar-transparent .brand-logo {
         height: 48px;
-        width: 130px;
-    }
-
-    .navbar .container-lg {
-        padding-left: 20px;
-        padding-right: 20px;
+        width: 90px;
     }
 
     /* Modern Dropdown styles */
@@ -323,6 +317,8 @@ p {
     .navbar-nav .nav-link {
         font-size: 1rem !important;
     }
+
+    
 }
 
 /* Mobile collapsed menu styles consolidated above */
@@ -768,8 +764,9 @@ p {
     }
 
     .hero-cta-group .btn {
-        width: 100%;
+        width: 85%;
         text-align: center;
+        margin: 0 auto;
     }
 
     .hero-trust-row {
