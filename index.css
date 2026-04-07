@@ -229,9 +229,9 @@ p {
     border-color: rgba(255, 255, 255, 0.5);
 }
 
-.navbar.navbar-transparent .navbar-toggler-icon {
+/* .navbar.navbar-transparent .navbar-toggler-icon {
     filter: invert(1);
-}
+} */
 
 /* --- Scrolled state (over light sections) --- */
 .navbar.navbar-scrolled {
