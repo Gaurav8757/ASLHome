@@ -2684,6 +2684,10 @@ p {
         font-size: 0.9rem !important;
     }
 
+    .pricing-section::before {
+        background: #fff5fa !important;
+    }
+
     /* ==================== UTILITY CLASSES ==================== */
     .text-primary {
         color: var(--primary-color) !important;
