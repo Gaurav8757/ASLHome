@@ -1085,6 +1085,455 @@ p {
 }
 
 
+
+/* ==================== RETAILER SECTION ==================== */
+.retailer-section {
+    position: relative;
+    padding: 100px 0 80px;
+    background:
+        repeating-linear-gradient(120deg,
+            rgba(255, 255, 255, 0.03) 0px,
+            rgba(255, 255, 255, 0.03) 1px,
+            rgba(0, 0, 0, 0) 2px,
+            rgba(0, 0, 0, 0) 1px),
+        radial-gradient(ellipse at 20% 50%, rgba(114, 12, 67, 0.18) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(68, 10, 102, 0.15) 0%, transparent 60%),
+        linear-gradient(160deg, #0d0118 0%, #1a0129 40%, #210216 70%, #0a010a 100%);
+    overflow: hidden;
+}
+
+/* Decorative floating orbs */
+.retailer-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(90px);
+    pointer-events: none;
+    animation: retailerOrbFloat 10s ease-in-out infinite;
+}
+
+.retailer-orb-1 {
+    width: 520px;
+    height: 520px;
+    background: radial-gradient(circle, rgba(114, 12, 67, 0.3), rgba(68, 10, 102, 0.1));
+    top: -150px;
+    left: -180px;
+    animation-delay: 0s;
+}
+
+.retailer-orb-2 {
+    width: 380px;
+    height: 380px;
+    background: radial-gradient(circle, rgba(68, 10, 102, 0.25), rgba(114, 12, 67, 0.08));
+    bottom: -100px;
+    right: -120px;
+    animation-delay: 5s;
+}
+
+@keyframes retailerOrbFloat {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50%       { transform: translateY(-35px) scale(1.06); }
+}
+
+/* ---- Header ---- */
+.retailer-header {
+    margin-bottom: 3.5rem;
+}
+
+.retailer-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffc107;
+    padding: 0.5rem 1.3rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(10px);
+}
+
+.retailer-eyebrow i {
+    font-size: 0.9rem;
+}
+
+.retailer-main-title {
+    font-size: clamp(2rem, 4.5vw, 2.75rem);
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.retailer-highlight {
+    background: linear-gradient(90deg, #ffc107, #ff7f50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.retailer-main-subtitle {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.65);
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.8;
+}
+
+/* ---- Income Banner ---- */
+.retailer-income-banner {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 193, 7, 0.3);
+    border-radius: 1.5rem;
+    padding: 1.25rem 2rem;
+    backdrop-filter: blur(16px);
+    box-shadow: 0 12px 40px rgba(255, 193, 7, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.income-banner-icon {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ffc107, #ff8c00);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: #1a0010;
+    box-shadow: 0 8px 24px rgba(255, 193, 7, 0.4);
+}
+
+.income-banner-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.income-amount {
+    font-size: 1.55rem;
+    font-weight: 800;
+    color: #ffc107;
+    line-height: 1.1;
+}
+
+.income-label {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.55);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    margin-top: 0.25rem;
+}
+
+.income-banner-divider {
+    width: 1px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.income-banner-services {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.income-service-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.85);
+    padding: 0.3rem 0.85rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.income-service-tag:hover {
+    background: rgba(255, 193, 7, 0.15);
+    border-color: rgba(255, 193, 7, 0.4);
+    color: #ffc107;
+}
+
+/* ---- Benefits Grid ---- */
+.retailer-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 4rem;
+}
+
+/* --- Benefit Card --- */
+.retailer-benefit-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1.5rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+}
+
+.retailer-benefit-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(114, 12, 67, 0.0) 0%, rgba(68, 10, 102, 0.0) 100%);
+    transition: opacity 0.4s ease;
+    opacity: 0;
+    border-radius: inherit;
+}
+
+.retailer-benefit-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: rgba(255, 193, 7, 0.35);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 193, 7, 0.15);
+}
+
+.retailer-benefit-card:hover::before {
+    opacity: 1;
+    background: linear-gradient(135deg, rgba(114, 12, 67, 0.25) 0%, rgba(68, 10, 102, 0.2) 100%);
+}
+
+/* Accent variant (every 3rd card) */
+.retailer-benefit-card.benefit-card-accent {
+    background: rgba(114, 12, 67, 0.12);
+    border-color: rgba(114, 12, 67, 0.25);
+}
+
+.retailer-benefit-card.benefit-card-accent:hover {
+    border-color: rgba(255, 193, 7, 0.5);
+    background: rgba(114, 12, 67, 0.2);
+}
+
+/* Inner layout */
+.benefit-card-inner {
+    position: relative;
+    padding: 1.5rem 1.25rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Icon */
+.benefit-icon-wrap {
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+    border-radius: 0.9rem;
+    background: linear-gradient(135deg, rgba(114, 12, 67, 0.55), rgba(68, 10, 102, 0.45));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: #ffc107;
+    transition: all 0.4s ease;
+    box-shadow: 0 6px 18px rgba(114, 12, 67, 0.3);
+}
+
+.retailer-benefit-card:hover .benefit-icon-wrap {
+    background: linear-gradient(135deg, #720c43, #440a66);
+    transform: scale(1.12) rotate(-6deg);
+    box-shadow: 0 10px 28px rgba(114, 12, 67, 0.55);
+}
+
+/* Content */
+.benefit-content {
+    flex: 1;
+}
+
+.benefit-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.4rem;
+    line-height: 1.35;
+    transition: color 0.3s ease;
+}
+
+.retailer-benefit-card:hover .benefit-title {
+    color: #ffc107;
+}
+
+.benefit-desc {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.52);
+    line-height: 1.65;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.retailer-benefit-card:hover .benefit-desc {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+/* Number watermark */
+.benefit-number {
+    position: absolute;
+    bottom: 8px;
+    right: 14px;
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.04);
+    line-height: 1;
+    font-family: 'Segoe UI', sans-serif;
+    pointer-events: none;
+    transition: color 0.4s ease;
+    letter-spacing: -0.04em;
+}
+
+.retailer-benefit-card:hover .benefit-number {
+    color: rgba(255, 193, 7, 0.1);
+}
+
+/* ---- CTA Block ---- */
+.retailer-cta-wrap {
+    padding: 3rem 2rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+    backdrop-filter: blur(12px);
+    position: relative;
+    overflow: hidden;
+}
+
+.retailer-cta-wrap::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ffc107, #720c43, #440a66, transparent);
+}
+
+.retailer-cta-text {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.retailer-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(135deg, #ffc107, #ff8c00);
+    color: #1a0010;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.9rem 2.5rem;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(255, 193, 7, 0.35);
+    transition: all 0.35s ease;
+    text-decoration: none;
+    margin-bottom: 1.25rem;
+}
+
+.retailer-cta-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 18px 45px rgba(255, 193, 7, 0.5);
+    color: #0d0010;
+}
+
+.retailer-cta-note {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.retailer-cta-note .text-success {
+    color: #4ade80 !important;
+}
+
+/* ---- Responsive Breakpoints ---- */
+@media (max-width: 1200px) {
+    .retailer-benefits-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+    .retailer-section {
+        padding: 70px 0 60px;
+    }
+
+    .retailer-benefits-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .retailer-income-banner {
+        gap: 1rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .income-banner-divider {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .retailer-benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .retailer-main-title {
+        font-size: 1.9rem;
+    }
+
+    .income-amount {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .retailer-benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 0.85rem;
+    }
+
+    .benefit-card-inner {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1.25rem;
+    }
+
+    .benefit-content {
+        text-align: left;
+    }
+
+    .benefit-icon-wrap {
+        min-width: 44px;
+        height: 44px;
+    }
+
+    .benefit-number {
+        display: none;
+    }
+
+    .retailer-income-banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.85rem;
+    }
+
+    .income-banner-text {
+        text-align: center;
+    }
+}
+
 /* --- VGIF SECTION --- */
 .vgif-section-bg {
     background:
